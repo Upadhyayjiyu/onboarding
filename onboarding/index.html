@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onboarding | SmartApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Welcome Screen -->
+    <section class="screen active" id="welcome">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="logo" alt="App Logo">
+      <h1>Welcome to SmartApp</h1>
+      <p>Your productivity companion in one place.</p>
+      <button onclick="nextScreen('features')">Get Started</button>
+    </section>
+
+    <!-- Features Screen -->
+    <section class="screen" id="features">
+      <h1>Why SmartApp?</h1>
+      <ul>
+        <li>✔ Task Management</li>
+        <li>✔ Smart Reminders</li>
+        <li>✔ Team Collaboration</li>
+      </ul>
+      <button onclick="nextScreen('signup')">Next</button>
+    </section>
+
+    <!-- Sign-Up Screen -->
+    <section class="screen" id="signup">
+      <h1>Create Your Account</h1>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
